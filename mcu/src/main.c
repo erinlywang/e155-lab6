@@ -135,15 +135,15 @@ int main(void) {
     
     char tempStatusStr[40];
     if (temp_res == 0xE0)
-      sprintf(tempStatusStr, "Temperature: %.0f degrees C", temp);
+      sprintf(tempStatusStr, "Temperature: %.0f °C", temp);
     else if (temp_res == 0xE2)
-      sprintf(tempStatusStr, "Temperature: %.1f degrees C", temp);
+      sprintf(tempStatusStr, "Temperature: %.1f °C", temp);
     else if (temp_res == 0xE4) 
-      sprintf(tempStatusStr, "Temperature: %.2f degrees C", temp);
+      sprintf(tempStatusStr, "Temperature: %.2f °C", temp);
     else if (temp_res == 0xE6) 
-      sprintf(tempStatusStr, "Temperature: %.3f degrees C", temp);
+      sprintf(tempStatusStr, "Temperature: %.3f °C", temp);
     else if (temp_res == 0xE8) 
-      sprintf(tempStatusStr, "Temperature: %.4f degrees C", temp);
+      sprintf(tempStatusStr, "Temperature: %.4f °C", temp);
 
     
     // finally, transmit the webpage over UART
